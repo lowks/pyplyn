@@ -48,7 +48,7 @@ class UniqueFilter(elements.FilterPypElement):
         self.arrived = set()
 
     def stay(self, data):
-        if not data in self.arrived:
+        if data not in self.arrived:
             self.arrived.add(data)
             return True
         return False
@@ -66,4 +66,3 @@ class Negation(elements.FilterPypElement):
 
     def stay(self, data):
         return not self.filter_element.stay(data)
-

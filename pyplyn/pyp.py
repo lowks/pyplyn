@@ -42,7 +42,6 @@ class Pipe(object):
         for other_pipe in other_pipes:
             assert isinstance(other_pipe, elements.MidPypElement), 'Wrong middle element type, want a MidPypElement!'
 
-
     def run(self):
         """
         Let the pipe flow

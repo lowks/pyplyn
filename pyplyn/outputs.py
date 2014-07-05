@@ -12,6 +12,7 @@ License: MIT, see LICENSE for more details.
 
 from . import elements
 
+
 class Writer(elements.OutPypElement):
     """
     Writes the data to a text file
@@ -34,6 +35,7 @@ class LineWriter(Writer):
 
     def extract(self, data):
         super(LineWriter, self).extract(data + "\n")
+
 
 class Printer(elements.OutPypElement):
     """

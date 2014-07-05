@@ -9,10 +9,11 @@ setup(
     name="pyplyn",
     version=pyplyn.__version__,
     author='Taha Dogan Gunes',
+    description='Only one-way pipeline (pyplyn) for data handling in Python',
     include_package_data=True,
     author_email='tdgunes@gmail.com',
     url='https://github.com/tdgunes/pyplyn',
-    packages=['pyplyn',],
+    packages=['pyplyn', ],
     license='MIT',
     long_description=open('README.rst').read(),
 )
